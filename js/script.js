@@ -39,6 +39,11 @@ createApp({
     };
   },
   methods: {
+    // sbarrato() {
+    //   if(this.todo.done = false) {
+    //     this.todo.done = taskIncompleta
+    //   }
+    // }
     inserisciTesto() {
       this.todo.push({ text: this.inputNew, done: false });
       console.log(input);

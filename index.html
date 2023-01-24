@@ -45,7 +45,11 @@
 
         <div class="task">
           <ul>
-            <li class="taskLi" v-for="(element, index) in todo">
+            <li
+              v-bind:class="{'taskIncompleta': todo.done}"
+              class="taskLi"
+              v-for="(element, index) in todo"
+            >
               {{element.text}}
               <i @click="eliminaTesto(index)" class="fas fa-times"></i>
             </li>
