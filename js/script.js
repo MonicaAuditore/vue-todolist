@@ -43,9 +43,15 @@ createApp({
       console.log(todo);
     },
 
-    taskNonCompletata() {
-      if ((this.todo.data = false)) {
-      }
+    // taskNonCompletata(element) {
+    //   if ((this.todo.done = false)) {
+    //     return "taskNonCompletata";
+    //   }
+    // },
+
+    eliminaTesto(index) {
+      this.todo.splice(index, 1);
+      console.log("click");
     },
   },
 }).mount("#app");
