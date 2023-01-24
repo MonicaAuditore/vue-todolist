@@ -26,16 +26,18 @@
         <!-- ---- fine header ----  -->
 
         <div class="inputeText">
-          <div>
+          <div class="form" @submit.prevent="onSubmit">
             <input
               class="input-val"
               type="text"
-              v-model="input"
+              v-model="inputNew"
               id="newTask"
               name="newTask"
               placeholder="Nuova task"
             />
-            <button class="aggiungi" @click="inserisciTesto()">Aggiungi</button>
+            <button type="submit" class="aggiungi" @click="inserisciTesto()">
+              Aggiungi
+            </button>
           </div>
         </div>
 
@@ -44,13 +46,9 @@
         <div class="task">
           <ul>
             <li class="taskLi" v-for="(element, index) in todo">
-              {{element}}
-              <i @click="eliminaTesto(index)" class="fas fa-times"></i>
-            </li>
-            <!-- <li class="taskLi" v-for="(element, index) in todo">
               {{element.text}}
               <i @click="eliminaTesto(index)" class="fas fa-times"></i>
-            </li> -->
+            </li>
           </ul>
         </div>
       </div>
