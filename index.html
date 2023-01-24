@@ -28,17 +28,19 @@
         <div class="inputeText">
           <form action="">
             <input type="text" id="newTask" name="newTask" />
-            <button>Aggiungi</button>
+            <button @click="inserisciTesto()">Aggiungi</button>
           </form>
         </div>
 
         <!-- ---- fine sez input ----  -->
         <div class="task">
           <ul>
-            <li>Fare i compiti <i class="fas fa-times"></i></li>
-            <li>Fare i compiti <i class="fas fa-times"></i></li>
-            <li>Fare i compiti <i class="fas fa-times"></i></li>
+            <li class="taskLi" v-for="(element, ) in todo">
+              {{element.text}} <i class="fas fa-times"></i>
+            </li>
           </ul>
+          <!-- :class="element.done = false ? taskIncompleta : ''" -->
+          <!-- <p :class="taskIncompleta">ciao</p> -->
         </div>
       </div>
     </div>
