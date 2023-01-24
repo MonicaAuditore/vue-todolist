@@ -26,25 +26,31 @@
         <!-- ---- fine header ----  -->
 
         <div class="inputeText">
-          <form action="">
+          <div>
             <input
+              class="input-val"
               type="text"
-              v-model="todo.text"
+              v-model="input"
               id="newTask"
               name="newTask"
+              placeholder="Nuova task"
             />
-            <button @click="inserisciTesto()">Aggiungi</button>
-          </form>
+            <button class="aggiungi" @click="inserisciTesto()">Aggiungi</button>
+          </div>
         </div>
 
         <!-- ---- fine sez input ----  -->
-        <!-- :class="element = false ? 'taskIncompleta': '' " -->
+
         <div class="task">
           <ul>
             <li class="taskLi" v-for="(element, index) in todo">
-              {{element.text}}
+              {{element}}
               <i @click="eliminaTesto(index)" class="fas fa-times"></i>
             </li>
+            <!-- <li class="taskLi" v-for="(element, index) in todo">
+              {{element.text}}
+              <i @click="eliminaTesto(index)" class="fas fa-times"></i>
+            </li> -->
           </ul>
         </div>
       </div>

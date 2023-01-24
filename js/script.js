@@ -27,27 +27,21 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      todo: [
-        { text: "fare i compiti", done: true },
-        { text: "fare la spesa", done: false },
-        { text: "fare il bucato", done: true },
-      ],
+      input: "",
+      todo: ["fare i compiti", "fare la spesa", "fare il bucato"],
+      // todo: [
+      //   { text: "fare i compiti", done: true },
+      //   { text: "fare la spesa", done: false },
+      //   { text: "fare il bucato", done: true },
+      // ],
 
       taskIncompleta: "testoSbarrato",
     };
   },
   methods: {
     inserisciTesto() {
-      console.log("test");
-      this.todo.push(this.todo);
-      console.log(todo);
+      this.todo.push(this.input);
     },
-
-    // taskNonCompletata(element) {
-    //   if ((this.todo.done = false)) {
-    //     return "taskNonCompletata";
-    //   }
-    // },
 
     eliminaTesto(index) {
       this.todo.splice(index, 1);
