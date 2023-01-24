@@ -44,7 +44,7 @@ createApp({
       console.log(input);
     },
 
-    eliminaTesto() {
+    eliminaTesto(index) {
       this.todo.splice(index, 1);
       console.log("click");
     },
