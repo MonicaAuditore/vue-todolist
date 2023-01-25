@@ -50,6 +50,12 @@ createApp({
       console.log("click");
     },
 
+    //al click se è vero diventa falso e viceversa
+    trueFalse(index) {
+      this.todo[index].done = !this.todo[index].done;
+      console.log(this.todo);
+    },
+
     testoSbarrato(index) {
       if (this.todo[index].done) {
         return;
