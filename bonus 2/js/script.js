@@ -30,9 +30,9 @@ createApp({
       inputNew: "",
 
       todo: [
-        { text: "fare i compiti", done: true },
-        { text: "fare la spesa", done: false },
-        { text: "fare il bucato", done: true },
+        { text: "Fare i compiti", done: true },
+        { text: "Fare la spesa", done: false },
+        { text: "Fare il bucato", done: true },
       ],
 
       taskIncompleta: "testoSbarrato",
