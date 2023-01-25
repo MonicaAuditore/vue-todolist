@@ -27,7 +27,7 @@ body {
 }
 
 img {
-  width: 300px;
+  width: 357px;
 }
 
 .inputeText {
@@ -53,12 +53,13 @@ button {
 }
 
 input {
-  padding: 6px;
+  padding: 16px;
   width: 75%;
   margin-right: 10px;
   border-radius: 5px;
   border: none;
   font-family: inherit;
+  color: #383838;
 }
 
 .task {
