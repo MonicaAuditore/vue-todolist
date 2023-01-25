@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #a9d1eb;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -12,7 +16,6 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
-  background-color: antiquewhite;
 }
 
 .header {
@@ -36,6 +39,8 @@ img {
 button {
   margin-left: 10px;
   padding: 6px 30px;
+  border-radius: 10px;
+  border: none;
 }
 
 .form {
@@ -48,10 +53,13 @@ input {
   padding: 6px;
   width: 75%;
   margin-right: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
 .task {
-  background-color: aquamarine;
+  background-color: #f6edf152;
+  border-radius: 20px;
 }
 
 ul {
