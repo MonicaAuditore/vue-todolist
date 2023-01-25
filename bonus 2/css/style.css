@@ -51,7 +51,7 @@ img {
   align-items: center;
 }
 
-.noselect {
+/* .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -89,16 +89,16 @@ button:hover {
 
 button:focus {
   outline: none;
-}
+} */
 
-/* button {
+button {
   margin-left: 10px;
   padding: 6px 30px;
   border-radius: 10px;
   border: none;
   font-family: inherit;
   color: #383838;
-} */
+}
 
 .form {
   width: 50%;
