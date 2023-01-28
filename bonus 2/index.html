@@ -41,9 +41,14 @@
               v-model="inputNew"
               id="newTask"
               name="newTask"
-              placeholder="Nuova task"
+              placeholder="Nuova Task . . ."
             />
-            <button type="submit" class="aggiungi" @click="inserisciTesto()">
+            <button
+              id="button"
+              type="submit"
+              class="aggiungi"
+              @click="inserisciTesto()"
+            >
               Aggiungi
             </button>
           </div>
@@ -60,6 +65,7 @@
               :class="testoSbarrato(index)"
             >
               {{element.text}}
+
               <i @click="eliminaTesto(index)" class="fas fa-times"></i>
             </li>
           </ul>
