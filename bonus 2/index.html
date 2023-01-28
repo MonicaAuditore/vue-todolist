@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- fine google font -->
     <!-- link font awasome -->
     <link
@@ -41,7 +42,7 @@
               v-model="inputNew"
               id="newTask"
               name="newTask"
-              placeholder="Nuova Task . . ."
+              placeholder="Nuovo Task . . ."
             />
             <button
               id="button"
@@ -70,8 +71,8 @@
             </li>
           </ul>
           <div class="messaggioNoTask" v-if="listaVuota == true">
-            <p>
-              Complimenti! <br />
+            <p class="fineTask">
+              <b>Complimenti!</b> <br />
               Hai completato tutti i task!
             </p>
 
