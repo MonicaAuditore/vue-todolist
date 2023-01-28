@@ -39,6 +39,7 @@ body {
 .container {
   margin: 0 auto;
   width: 28%;
+  position: relative;
 }
 
 .header {
@@ -142,7 +143,7 @@ button {
 }
 
 input {
-  padding: 20px;
+  padding: 20px 30px;
   width: 86%;
   background-color: #f9f9f966;
   border-radius: 55px;
@@ -220,6 +221,49 @@ particle {
   border-radius: 50%;
   pointer-events: none;
   opacity: 0;
+}
+
+.messaggioNoTask {
+  text-align: center;
+  line-height: 30px;
+}
+
+.messaggioNoTask p {
+  color: #9f7ee8;
+  padding-top: 51px;
+}
+
+.unicorn {
+  opacity: 0;
+  width: 70px;
+  position: absolute;
+  top: 750px;
+  left: 178px;
+
+  animation-name: flyUnicorn;
+  animation-duration: 8s;
+}
+
+@keyframes flyUnicorn {
+  0% {
+    opacity: 0;
+    top: 750px;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: -180px;
+    opacity: 1;
+  }
 }
 
 /* Media query */

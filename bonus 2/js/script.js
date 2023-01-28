@@ -29,6 +29,8 @@ createApp({
     return {
       inputNew: "",
 
+      listaVuota: false,
+
       todo: [
         { text: "Studiare", done: true },
         { text: "Fare la torta", done: false },
@@ -40,6 +42,7 @@ createApp({
   },
   methods: {
     inserisciTesto() {
+      this.listaVuota = false;
       if (this.inputNew !== "") {
         this.todo.push({ text: this.inputNew, done: true });
         this.inputNew = "";
@@ -50,6 +53,11 @@ createApp({
     eliminaTesto(index) {
       this.todo.splice(index, 1);
       console.log("click");
+
+      if (this.todo == "") {
+        this.listaVuota = true;
+        console.log(this.listaVuota);
+      }
     },
 
     //al click se è vero diventa falso e viceversa

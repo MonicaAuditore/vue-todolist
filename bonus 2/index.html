@@ -69,6 +69,16 @@
               <i @click="eliminaTesto(index)" class="fas fa-times"></i>
             </li>
           </ul>
+          <div class="messaggioNoTask" v-if="listaVuota == true">
+            <p>
+              Complimenti! <br />
+              Hai completato tutti i task!
+            </p>
+
+            <div class="unicor">
+              <img class="unicorn" src="img/2229 copia.png" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
