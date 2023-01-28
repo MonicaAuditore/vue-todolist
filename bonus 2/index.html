@@ -64,7 +64,7 @@
               v-for="(element, index) in todo"
               :class="testoSbarrato(index)"
             >
-              {{element.text}}
+              <p>{{element.text}}</p>
 
               <i @click="eliminaTesto(index)" class="fas fa-times"></i>
             </li>
