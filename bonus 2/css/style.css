@@ -39,7 +39,6 @@ body {
 .container {
   margin: 0 auto;
   width: 28%;
-  position: relative;
 }
 
 .header {
@@ -170,6 +169,9 @@ input {
 }
 
 .task {
+  position: relative;
+  overflow: hidden;
+
   background-color: #f6edf152;
   border-radius: 45px;
   min-height: 453px;
@@ -237,7 +239,7 @@ particle {
   opacity: 0;
   width: 70px;
   position: absolute;
-  top: 750px;
+  top: 461px;
   left: 178px;
 
   animation-name: flyUnicorn;
@@ -247,7 +249,7 @@ particle {
 @keyframes flyUnicorn {
   0% {
     opacity: 0;
-    top: 750px;
+    top: 461px;
   }
 
   1% {
@@ -261,7 +263,7 @@ particle {
     opacity: 1;
   }
   100% {
-    top: -180px;
+    top: -220px;
     opacity: 1;
   }
 }
