@@ -40,9 +40,11 @@ createApp({
   },
   methods: {
     inserisciTesto() {
-      this.todo.push({ text: this.inputNew, done: true });
-      this.inputNew = "";
-      console.log(input);
+      if (this.inputNew !== "") {
+        this.todo.push({ text: this.inputNew, done: true });
+        this.inputNew = "";
+        console.log(input);
+      }
     },
 
     eliminaTesto(index) {
