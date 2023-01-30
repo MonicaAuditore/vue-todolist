@@ -182,6 +182,10 @@ input {
   box-shadow: 5px 5px 15px 5px #ba95fc94; */
 }
 
+.taskLi {
+  cursor: pointer;
+}
+
 ul {
   padding: 30px;
 }
@@ -245,12 +249,7 @@ particle {
   left: 299px;
 
   animation-name: flyUnicorn;
-  animation-duration: 9s;
-}
-
-.fineTask {
-  font-size: 21px;
-  line-height: 36px;
+  animation-duration: 7s;
 }
 
 @keyframes flyUnicorn {
@@ -275,6 +274,15 @@ particle {
   }
 }
 
+.fineTask {
+  font-size: 21px;
+  line-height: 36px;
+}
+
+#button {
+  cursor: pointer;
+}
+
 /* Media query */
 
 /*MOBILE*/
@@ -282,6 +290,10 @@ particle {
   .container {
     min-width: 100%;
     padding: 20px;
+  }
+
+  .unicorn {
+    left: 166px;
   }
 }
 
